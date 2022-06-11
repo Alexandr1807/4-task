@@ -1,5 +1,36 @@
 {
+  "name": "4-task",
+  "version": "1.0.0",
+  "description": "mern app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix admin-dashboard",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandr1807/4-task.git"
+  },
+  "author": "Alexandr Cyganov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandr1807/4-task/issues"
+  },
+  "homepage": "https://github.com/Alexandr1807/4-task#readme",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.1.3",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
   }
 }
